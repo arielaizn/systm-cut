@@ -1,0 +1,6 @@
+{
+  "name": "Page Tour",
+  "category": "Utility",
+  "description": "Walks through every page of SYSTM Cut, one second each, and comes back to Edit.",
+  "command": ["python3", "tour.py"]
+}

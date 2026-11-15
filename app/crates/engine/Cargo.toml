@@ -1,0 +1,56 @@
+[package]
+name = "systmcut-engine"
+description = "SYSTM Cut engine façade: session, command registry, history, media pool"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[features]
+default = []
+# Speech-to-text with Whisper (candle, CPU). Off by default and in wasm builds.
+whisper = ["systmcut-speech/whisper"]
+# Speech-model downloads over HTTPS.
+speech-download = ["systmcut-speech/download"]
+# Natural voices for Text to Speech: Kokoro-82M on candle (CPU) and their download.
+neural-voices = ["systmcut-tts/kokoro", "speech-download"]
+
+[dependencies]
+systmcut-time = { workspace = true }
+systmcut-geom = { workspace = true }
+systmcut-color = { workspace = true }
+systmcut-frame = { workspace = true }
+systmcut-media = { workspace = true }
+craft-media = { workspace = true, features = ["mxf"] }
+systmcut-codecs = { workspace = true }
+systmcut-project = { workspace = true }
+systmcut-edit = { workspace = true }
+systmcut-render = { workspace = true }
+systmcut-scopes = { workspace = true }
+systmcut-text = { workspace = true }
+systmcut-audio-dsp = { workspace = true }
+systmcut-export = { workspace = true }
+systmcut-format = { workspace = true }
+systmcut-interchange = { workspace = true }
+systmcut-captions = { workspace = true }
+systmcut-speech = { workspace = true }
+systmcut-tts = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+roxmltree = { workspace = true }
+chrono = { workspace = true }
+craft-docpath = { workspace = true }
+web-time = "1"
+
+[dev-dependencies]
+systmcut-testkit = { workspace = true }
+tempfile = "3"
+systmcut-audio-dsp = { workspace = true, features = ["test-util"] }
+systmcut-dng = { workspace = true, features = ["writer"] }
+systmcut-isobmff = { workspace = true }
+image = { version = "0.25", default-features = false, features = ["png", "gif"] }

@@ -1,0 +1,15 @@
+dist/
+target/
+**/target/
+node_modules/
+.DS_Store
+# personal: screenshots of the owner's own projects and desktop, another site's pages, brand files
+research/resolve/*.png
+research/site-ref/
+mockups/build-*.png
+mockups/first-build.png
+packaging/display.ttf
+packaging/icon.png
+mockups/
+PLAN.md
+PLAN-PHOTO-CUT-TEAMS.md

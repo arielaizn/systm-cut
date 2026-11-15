@@ -1,0 +1,27 @@
+{
+  "id": "systmcut",
+  "name": "SYSTM Cut",
+  "upgradeCode": "31E6FB14-9DBC-41DD-B24B-26B71FB31B62",
+  "sources": [
+    "systmcut.wxs"
+  ],
+  "icon": "assets/app-icon/systmcut.ico",
+  "localization": [],
+  "extensions": [
+    "UI"
+  ],
+  "payloads": [
+    "NOTICE",
+    "systmcut-cli.exe",
+    "systmcut.exe"
+  ],
+  "registry": [
+    [
+      "-1",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\systmcut.exe",
+      "",
+      "[#SystmCutExe]"
+    ]
+  ],
+  "mode": "dualScope"
+}

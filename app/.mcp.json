@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "systmcut": {
+      "command": "target/release/systmcut-cli",
+      "args": ["mcp", "--bridge", "127.0.0.1:9876"]
+    },
+    "systmcut-headless": {
+      "command": "target/release/systmcut-cli",
+      "args": ["mcp", "--demo"]
+    }
+  }
+}

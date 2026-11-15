@@ -1,0 +1,18 @@
+[package]
+name = "systmcut-captions"
+description = "SYSTM Cut captions: SRT, WebVTT, SCC, MCC, EBU STL and TTML/IMSC1/DFXP import/export, caption layout and burn-in rasterisation"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+systmcut-time = { workspace = true }
+systmcut-color = { workspace = true }
+systmcut-project = { workspace = true }
+systmcut-text = { workspace = true }
+craft-captions = { workspace = true }
+

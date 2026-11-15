@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=SYSTM Cut
+GenericName=Video Editor
+Comment=Edit video, color and sound
+Exec=systmcut %F
+TryExec=systmcut
+Icon=ai.storyteller.systmcut
+Terminal=false
+StartupNotify=true
+StartupWMClass=ai.storyteller.systmcut
+Categories=AudioVideo;Video;AudioVideoEditing;
+MimeType=application/x-systmcut;video/mp4;video/x-m4v;video/quicktime;video/x-matroska;video/webm;video/vnd.avi;video/x-msvideo;application/mxf;video/mp2t;video/mpeg;video/3gpp;
+Keywords=video;editor;film;timeline;color;grading;nle;
